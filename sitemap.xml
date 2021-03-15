@@ -6,6 +6,11 @@
   </url><url>
     <loc>https://fhopfensperger.github.io/</loc>
   </url><url>
+    <loc>https://fhopfensperger.github.io/posts/</loc>
+  </url><url>
+    <loc>https://fhopfensperger.github.io/search/</loc>
+    <priority>0.1</priority>
+  </url><url>
     <loc>https://fhopfensperger.github.io/tags/</loc>
   </url>
 </urlset>

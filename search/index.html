@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tags</title>
+    <title>Search Results</title>
     
 
 
@@ -113,7 +113,7 @@
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/tags" data-filter="all"></a></li>
+            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
             <div class="subtree">
                 
 
@@ -130,13 +130,29 @@
 <section class="content-section" id="content-section">
   <div class="content container-fluid" id="content">
     <div class="container-fluid post-card-holder" id="post-card-holder">
-      
-      
-    </div>
-    <div class="paginator">
-      
+      <div id="search-results">
 
+        <script id="search-result-template" type="text/x-js-template">
+          <div class="post-card">
+            <a href="${link}" class="post-card-link">
+              <div class="card" style="min-height: 352px;"><a href="${link}" class="post-card-link">
+                <div class="card-head">
+                  <img class="card-img-top" src="${hero}">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">${title}</h5>
+                  <p class="card-text post-summary">${summary}</p>
+                </div>
+                <div class="card-footer">
+                  <span class="float-left">${date}</span>
+                  <a href="${link}" class="float-right btn btn-outline-info btn-sm">Read</a>
+                </div>
+              </div>
+	          </a>
+          </div>
+        </script>
 
+      </div>
     </div>
   </div>
 </section>
@@ -265,7 +281,9 @@
 
     
     
-    <script src="/js/list.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
+<script src="https://fhopfensperger.github.io/js/search.js"></script>
 
   </body>
 </html>
