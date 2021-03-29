@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Posts</title>
+    <title>Notes</title>
     
 
 
@@ -38,8 +38,12 @@
 <link rel="stylesheet" href="/css/style.css"/>
 
     
-    <link rel="stylesheet" href="/css/layouts/list.css">
-    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+  />
+  <link rel="stylesheet" href="/css/layouts/notes.css">
+  <link rel="stylesheet" href="/css/navigators/sidebar.css">
 
 
     
@@ -126,7 +130,7 @@ if (!doNotTrack) {
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <li id="list-heading"><a href="/notes" data-filter="all">Notes</a></li>
             <div class="subtree">
                 
 
@@ -142,13 +146,13 @@ if (!doNotTrack) {
       
 <section class="content-section" id="content-section">
   <div class="content container-fluid" id="content">
-    <div class="container-fluid post-card-holder" id="post-card-holder">
-      
-      
+    <div class="container-fluid note-card-holder" id="note-card-holder">
         
-          
+
+    
         
-      
+    
+
     </div>
     <div class="paginator">
       
@@ -291,7 +295,11 @@ if (!doNotTrack) {
 
     
     
-    <script src="/js/list.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
 
   </body>
 </html>
